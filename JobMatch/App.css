@@ -1,0 +1,218 @@
+.App {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f2e4cb;
+  }
+  
+  .appSettings {
+    height: 650px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f2e4cb;
+  }
+  
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+  .profile-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .control-panel {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  
+  .control-panel button {
+    padding: 10px 20px;
+    margin-left: 37px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .control-panel button:hover {
+    background-color: #0056b3;
+  }
+  
+  .navigator {
+    border-radius: 16px;
+    margin-top: 26px;
+    height: 5.0rem;
+    width: 100%;
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* styles.css */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bottom-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bottom-nav li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .bottom-nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .bottom-nav a:hover {
+    color: #007bff;
+  }
+  
+  
+  .image-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    border-radius: 20px;
+    padding: 25px;
+    margin: 30px;
+    font-family: "Times";
+    text-align:'end';
+    font-size: 20;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .settings-icon {
+    position: absolute;
+    top: 1.25em;
+    left: 21em;
+    height: 32px;
+    width: 32px;
+    margin-right: 100px;
+  }
+  
+  .customSlider {
+    /* max width of your slider */
+    max-width: 300px;
+    /* Optional: Only If you want to center your slider in the page */
+    margin: auto;
+  }
+  
+  .customSlider-track {
+    /* Top value to align your track to the center of your thumb */
+    top: 8px;
+    /* thickness of the track */
+    height: 6px;
+   /* default color of your track */
+    background: var(--track-color);
+  }
+  
+  .customSlider-track.customSlider-track-0 {
+    /* color of the track before the thumb */
+    background: var(--main-color);
+  }
+  
+  :root {
+    --main-color: rgb(104, 117, 217);
+    --main-color-hover: rgb(104, 117, 217, 0.2);
+    --track-color: #bbbbbb;
+  }
+  
+  .customSlider-thumb {
+    cursor: pointer;
+    /*color for the thumb */
+    background: var(--main-color);
+    /* shape of the thumb: circle */
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    /* remove default outline when selected */
+    outline: none;
+  }
+  
+  .customSlider-thumb:hover {
+    box-shadow: 0 0 0 8px var(--main-color-hover);
+  }
+  
+  .save-button {
+    border-radius: 5px;
+    background-color: white;
+    height: 25px;
+    margin-top: 20px;
+    margin-right: 150px;
+  }

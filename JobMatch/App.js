@@ -1,20 +1,42 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import SwiperComponent from './Swiper';
+
+const Tab = createBottomTabNavigator();
+
+function SwipeScreen() {
+  return (
+    <View style={styles.container}>
+      <SwiperComponent />
+    </View>
+  );
+}
+
+function MatchesScreen() {
+  return <Text></Text>;
+}
+
+function ProfileScreen() {
+  return <Text></Text>;
+}
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>JobMatch!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+         <Tab.Screen name="Swipe" component={SwipeScreen} />
+         <Tab.Screen name="Matches" component={MatchesScreen} />
+         <Tab.Screen name="Profile" component={ProfileScreen} />
+       </Tab.Navigator>
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#F5FCFF', // Change this color to your desired background color
   },
 });
