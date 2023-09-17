@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   cardContainer: {
     flexGrow: 1,
     justifyContent: 'center',
-    marginBottom: 100,
+    marginBottom: 50,
   },
   card: {
     flex: 1,

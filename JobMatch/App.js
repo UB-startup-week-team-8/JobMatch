@@ -4,6 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import SwiperComponent from './Swiper';
+import { Ionicons } from '@expo/vector-icons';
+import { EvilIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,15 +29,23 @@ function ProfileScreen() {
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={{
-          tabBarStyle: [{ display: 'flex' }, null],
-        }}
-      >
-        <Tab.Screen name="Swipe" component={SwipeScreen} />
-        <Tab.Screen name="Matches" component={MatchesScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
-      </Tab.Navigator>
+      <Tab.Navigator>
+         <Tab.Screen name="Swipe" component={SwipeScreen} options={{
+             tabBarIcon: () => (
+               <EvilIcons name="pointer" size={40} color={'black'} />
+             ),
+           }}/>
+         <Tab.Screen name="Matches" component={MatchesScreen} options={{
+             tabBarIcon: () => (
+               <FontAwesome name="handshake-o" size={25} color={'black'} />
+             ),
+           }}/>
+         <Tab.Screen name="Profile" component={ProfileScreen} options={{
+             tabBarIcon: () => (
+               <Ionicons name="person" size={25} color={'black'} />
+             ),
+           }}/>
+       </Tab.Navigator>
     </NavigationContainer>
   );
 }
@@ -45,3 +56,4 @@ const styles = StyleSheet.create({
     marginTop: -40, // Adjust this value as per your requirement
   },
 });
+
