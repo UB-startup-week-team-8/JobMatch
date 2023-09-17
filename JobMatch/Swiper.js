@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { View, StyleSheet } from 'react-native';
 import Swiper from 'react-native-deck-swiper';
 import Card from './Card';
@@ -91,10 +91,29 @@ export default function SwiperComponent() {
     console.log(`Swiped ${direction}`);
   };
 
+  const [jobPosts, setJobPosts] = useState([]);
+useEffect(() => {
+  fetch('https://jobmatch.bronos.org/api/job?user_id=12', {
+    method: 'GET',
+    redirect: 'follow'
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Handle the data
+      setJobPosts(data);
+    })
+    .catch(error => {
+      // Handle any errors
+      console.error(error);
+    });
+  });
+
+  // console.log(jobPosts);
+
   return (
     <View>
       <Swiper
-        cards={fakeJobPosts}
+        cards={jobPosts}
         renderCard={(card) => <Card card={card} />}
         onSwipedLeft={() => handleSwiped('left')}
         onSwipedRight={() => handleSwiped('right')}
