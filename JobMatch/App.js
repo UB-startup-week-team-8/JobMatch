@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import SwiperComponent from './Swiper';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>JobMatch!</Text>
-      <StatusBar style="auto" />
+      <SwiperComponent />
     </View>
   );
 }
@@ -13,8 +13,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#F5FCFF', // Change this color to your desired background color
   },
 });
