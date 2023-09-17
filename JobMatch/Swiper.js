@@ -97,7 +97,7 @@ export default function SwiperComponent() {
         onSwiped={(cardIndex) => { console.log(cardIndex) }}
         onSwipedAll={() => { console.log('onSwipedAll') }}
         stackSize={2} // Number of cards to stack below the current card
-        stackSeparation={-15} // Distance between stacked cards
+        stackSeparation={0} // Distance between stacked cards
       />
     </View>
   );

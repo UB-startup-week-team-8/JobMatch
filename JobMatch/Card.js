@@ -2,17 +2,20 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 
 export default function Card({ card }) {
-  const { image, name, title, company, description, moreInfo } = card;
+  const { image, title, company, description, moreInfo } = card;
+
   const [expanded, setExpanded] = useState(false);
+  const [imageHeight, setImageHeight] = useState("65%");
 
   const toggleExpanded = () => {
     setExpanded(!expanded);
+    setImageHeight(expanded ? '65%' : '20%');
   };
 
   return (
     <ScrollView contentContainerStyle={styles.cardContainer}>
       <View style={styles.card}>
-        <Image source={image} style={styles.image} />
+      <Image source={image} style={[styles.image, { height: imageHeight }]} />
         <View style={styles.infoContainer}>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.company}>{company}</Text>
@@ -30,20 +33,20 @@ export default function Card({ card }) {
 const styles = StyleSheet.create({
   cardContainer: {
     flexGrow: 1,
+    justifyContent: 'center',
+    marginBottom: 100,
   },
   card: {
     flex: 1,
-    borderRadius: 4,
-    borderWidth: 2,
+    borderRadius: 10,
     borderColor: '#E8E8E8',
-    paddingTop: 20,
     backgroundColor: 'white',
     alignItems: 'center',
   },
   image: {
-    width: 300,
-    height: 400,
-    borderRadius: 10,
+    width: '100%',
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
     marginBottom: 10,
   },
   infoContainer: {

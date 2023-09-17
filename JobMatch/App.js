@@ -1,15 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import SwiperComponent from './Swiper';
-//    npm install @react-navigation/native @react-navigation/bottom-tabs react-native-paper
 
 const Tab = createBottomTabNavigator();
 
 function SwipeScreen() {
   return (
-    <View style={styles.container}>
+    <View style={styles.swiperContainer}>
       <SwiperComponent />
     </View>
   );
@@ -26,18 +26,22 @@ function ProfileScreen() {
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-         <Tab.Screen name="Swipe" component={SwipeScreen} styles={{}}/>
-         <Tab.Screen name="Matches" component={MatchesScreen} />
-         <Tab.Screen name="Profile" component={ProfileScreen} />
-       </Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarStyle: [{ display: 'flex' }, null],
+        }}
+      >
+        <Tab.Screen name="Swipe" component={SwipeScreen} />
+        <Tab.Screen name="Matches" component={MatchesScreen} />
+        <Tab.Screen name="Profile" component={ProfileScreen} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  swiperContainer: {
     flex: 1,
-    backgroundColor: '#F5FCFF', // Change this color to your desired background color
+    marginTop: -40, // Adjust this value as per your requirement
   },
 });
