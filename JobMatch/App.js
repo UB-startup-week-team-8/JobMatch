@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import SwiperComponent from './Swiper';
+//    npm install @react-navigation/native @react-navigation/bottom-tabs react-native-paper
 
 const Tab = createBottomTabNavigator();
 
@@ -26,7 +27,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-         <Tab.Screen name="Swipe" component={SwipeScreen} />
+         <Tab.Screen name="Swipe" component={SwipeScreen} styles={{}}/>
          <Tab.Screen name="Matches" component={MatchesScreen} />
          <Tab.Screen name="Profile" component={ProfileScreen} />
        </Tab.Navigator>
