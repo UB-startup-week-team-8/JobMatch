@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    marginBottom: 5,
+    marginBottom: 10,
   },
   company: {
     fontSize: 18,
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         paddingHorizontal: 20,
         marginTop: 20,
-        marginBottom: 20,
+        marginBottom: 10,
     },
   moreInfo: {
     fontSize: 14,

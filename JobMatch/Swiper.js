@@ -86,18 +86,22 @@ const fakeJobPosts = [
   }
 ];
 
-
-
 export default function SwiperComponent() {
+  const handleSwiped = (direction) => {
+    console.log(`Swiped ${direction}`);
+  };
+
   return (
     <View>
       <Swiper
         cards={fakeJobPosts}
         renderCard={(card) => <Card card={card} />}
-        onSwiped={(cardIndex) => { console.log(cardIndex) }}
+        onSwipedLeft={() => handleSwiped('left')}
+        onSwipedRight={() => handleSwiped('right')}
         onSwipedAll={() => { console.log('onSwipedAll') }}
-        stackSize={2} // Number of cards to stack below the current card
-        stackSeparation={0} // Distance between stacked cards
+        stackSize={2}
+        stackSeparation={0}
+        verticalSwipe={false}
       />
     </View>
   );
