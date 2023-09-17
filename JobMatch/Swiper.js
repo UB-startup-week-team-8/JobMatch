@@ -102,6 +102,8 @@ export default function SwiperComponent() {
         stackSize={2}
         stackSeparation={0}
         verticalSwipe={false}
+        velocityThreshold={0.2}
+        swipeDuration={200}
       />
     </View>
   );
