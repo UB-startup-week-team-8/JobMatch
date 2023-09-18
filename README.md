@@ -75,7 +75,7 @@ To get started with the Job Match React Native frontend, follow these steps:
 
 ## Tech Stack
 - Frontend: React Native
-- Backend: Node.js, Moleculer
+- Backend: Node.js, Moleculer ([Link to Backend Repository](https://github.com/UB-startup-week-team-8/moleculer))
 - Database: MongoDB
 - AI and Recommendations: Machine learning algorithms (under development)
 - Cloud Services: Leveraged for scalability and reliability
