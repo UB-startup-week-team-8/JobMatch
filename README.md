@@ -40,13 +40,19 @@ To get started with the Job Match React Native frontend, follow these steps:
    git clone https://github.com/UB-startup-week-team-8/JobMatch/tree/main
    ```
 
-2. **Install dependencies:**
+2. **Navigate to the directory:**
+
+   ```bash
+   cd JobMatch
+   ```
+
+3. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-3. **Run the app:**
+4. **Run the app:**
 
    Install the Expo Go app on your iOS or Android phone, and connect to the same wireless network as your computer. Then run the following command:
 
