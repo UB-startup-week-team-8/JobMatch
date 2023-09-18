@@ -78,11 +78,11 @@ To get started with the Job Match React Native frontend, follow these steps:
 
 
 ## Contributors
-- [Puru Soni](https://www.linkedin.com/in/purusoni/)
-- [Naveen]()
-- [John]()
-- [Dylan]()
-- [Eddie]()
+- [Puru Soni](https://github.com/puru-soni-04)
+- [Naveen](https://github.com/chedetinaveen)
+- [John](https://github.com/johntolo)
+- [Dylan](https://github.com/dtmcruz)
+- [Eddie](https://github.com/ejanes)
 
 ## Acknowledgments
 We would like to express our gratitude to the open-source community and all contributors who have helped make Job Match a reality.
