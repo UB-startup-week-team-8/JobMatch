@@ -15,7 +15,7 @@ const DMListScreen = () => {
       { id: 2, name: 'Amazon' },
       { id: 3, name: 'Google' },
       { id: 4, name: 'Meta' },
-      { id: 5, name: 'Mirosoft' },
+      { id: 5, name: 'Microsoft' },
       { id: 6, name: 'Apple' },
       { id: 7, name: 'IBM' },
       { id: 8, name: 'Mozilla' },
