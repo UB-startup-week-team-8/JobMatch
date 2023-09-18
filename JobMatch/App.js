@@ -5,9 +5,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import SwiperComponent from './Swiper';
 import DMComponent from './DMs';
-import { Ionicons } from '@expo/vector-icons';
-import { EvilIcons } from '@expo/vector-icons';
-import { FontAwesome } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,7 +18,7 @@ function SwipeScreen() {
 
 function MatchesScreen() {
   return (
-    <View style={styles.swiperContainer}>
+    <View style={styles.matchesContainer}>
       <DMComponent />
     </View>
   );
@@ -37,17 +34,17 @@ export default function App() {
       <Tab.Navigator>
          <Tab.Screen name="Swipe" component={SwipeScreen} options={{
              tabBarIcon: () => (
-               <EvilIcons name="pointer" size={40} color={'black'} />
+              <Text style={{fontSize: 25}}>🔥</Text>
              ),
            }}/>
          <Tab.Screen name="Matches" component={MatchesScreen} options={{
              tabBarIcon: () => (
-               <FontAwesome name="handshake-o" size={25} color={'black'} />
+                <Text style={{fontSize: 25}}>💬</Text>
              ),
            }}/>
          <Tab.Screen name="Profile" component={ProfileScreen} options={{
              tabBarIcon: () => (
-               <Ionicons name="person" size={25} color={'black'} />
+                <Text style={{fontSize: 25}}>👤</Text>
              ),
            }}/>
        </Tab.Navigator>
@@ -59,6 +56,8 @@ const styles = StyleSheet.create({
   swiperContainer: {
     flex: 1,
     marginTop: -40, // Adjust this value as per your requirement
+  },
+  matchesContainer: {
   },
 });
 

@@ -11,7 +11,7 @@ const DMListScreen = () => {
   const fetchData = () => {
 
     const companies = [
-      { id: 1, name: '\nNetflix'},
+      { id: 1, name: 'Netflix'},
       { id: 2, name: 'Amazon' },
       { id: 3, name: 'Google' },
       { id: 4, name: 'Meta' },
@@ -25,10 +25,10 @@ const DMListScreen = () => {
   };
 
   const renderItem = ({ item }) => (
-    <View style={{padding: 20}}>
+    <View style={{padding: 20, marginTop: 0}}>
     <TouchableOpacity onPressIn={() => {opacity: 0.1}} onPressOut={() => {opacity: 1}}>
-      <Text style={{fontSize: 20}}>{item.name}</Text>
-      <Text style={{marginLeft: 22, marginTop: 10, color: 808080}}>Hello, we saw your application and we...</Text>
+      <Text style={{fontSize: 20}}><Text style={{fontSize: 40}}>🔥</Text>{item.name}</Text>
+      <Text style={{marginLeft: 0, marginTop: 10, color: 808080}}>Hello, we saw your application and we...</Text>
     </TouchableOpacity>  
     </View>
   );
@@ -40,7 +40,6 @@ const DMListScreen = () => {
   };
 
   return (
-
     <SafeAreaView>
       <FlatList
         data={data}
