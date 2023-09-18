@@ -2,6 +2,10 @@
 
 ***Hackathon Project***
 
+## Demo 📹
+
+<img src="./demo.gif" height=500 alt="JobMatch Demo Video">
+
 ## Finding Inspiration 🌟
 
 Our journey with Job Match started with a shared frustration – the tedious and often disheartening process of job hunting. Drawing from our own experiences, we embarked on a mission to redefine this process, envisioning a platform that would make finding the perfect job as effortless and enjoyable as swiping right on a dating app.
