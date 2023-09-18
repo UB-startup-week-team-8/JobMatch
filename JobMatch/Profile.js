@@ -27,7 +27,7 @@ const SettingsPage = () => {
         value={rounded}
         onValueChange={(value) => setCurrentValue(value)}/>
         <Text>{rounded}</Text>
-        
+
         <SelectDropdown
         data={options}
         defaultIndex={4}
