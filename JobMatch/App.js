@@ -1,9 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import SwiperComponent from './Swiper';
+import DMComponent from './DMs';
 import { Ionicons } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
@@ -19,7 +20,11 @@ function SwipeScreen() {
 }
 
 function MatchesScreen() {
-  return <Text></Text>;
+  return (
+    <View style={styles.swiperContainer}>
+      <DMComponent />
+    </View>
+  );
 }
 
 function ProfileScreen() {
