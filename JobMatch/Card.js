@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 
 export default function Card({ card }) {
-  const { image, title, company, description, moreInfo } = card;
+  if (!card) {
+    return <></>;
+  }
+  
+  const { image, title, company, description, moreinfo } = card;
 
   const [expanded, setExpanded] = useState(false);
   const [imageHeight, setImageHeight] = useState("65%");
@@ -20,9 +24,9 @@ export default function Card({ card }) {
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.company}>{company}</Text>
           <Text style={styles.description}>{description}</Text>
-          {expanded && <Text style={styles.moreInfo}>{moreInfo}</Text>}
-          <TouchableOpacity onPress={toggleExpanded} style={styles.moreInfoButton}>
-            <Text style={styles.moreInfoButtonText}>{expanded ? 'Less Info' : 'More Info'}</Text>
+          {expanded && <Text style={styles.moreinfo}>{moreinfo}</Text>}
+          <TouchableOpacity onPress={toggleExpanded} style={styles.moreinfoButton}>
+            <Text style={styles.moreinfoButtonText}>{expanded ? 'Less Info' : 'More Info'}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -34,7 +38,7 @@ const styles = StyleSheet.create({
   cardContainer: {
     flexGrow: 1,
     justifyContent: 'center',
-    marginBottom: 0,
+    marginBottom: 100,
   },
   card: {
     flex: 1,
@@ -66,23 +70,23 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         paddingHorizontal: 20,
         marginTop: 20,
-        marginBottom: 10,
+        marginBottom: 0,
     },
-  moreInfo: {
+  moreinfo: {
     fontSize: 14,
     fontStyle: 'italic',
     textAlign: 'center',
     paddingHorizontal: 20,
     marginTop: 10,
   },
-  moreInfoButton: {
+  moreinfoButton: {
     marginTop: 10,
     backgroundColor: '#E8E8E8',
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderRadius: 5,
   },
-  moreInfoButtonText: {
+  moreinfoButtonText: {
     fontSize: 14,
     fontWeight: 'bold',
   },
