@@ -37,3 +37,55 @@ To get started with the Job Match React Native frontend, follow these steps:
 1. **Clone the repository:**
 
    ```bash
+   git clone https://github.com/UB-startup-week-team-8/JobMatch/tree/main
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the app:**
+
+   Install the Expo Go app on your iOS or Android phone, and connect to the same wireless network as your computer. Then run the following command:
+
+   ```bash
+   npx expo start
+   ```
+
+   Scan the QR code that appears in the terminal with the Expo Go app, and the app will load on your phone.
+
+## Features
+- Browse job listings with ease.
+- Seamlessly chat with employers.
+- Apply for jobs directly from the app.
+- User-friendly interface designed for job seekers.
+- Ongoing development of AI algorithms for improved job recommendations.
+
+## Tech Stack
+- Frontend: React Native
+- Backend: Node.js, Moleculer
+- Database: MongoDB
+- AI and Recommendations: Machine learning algorithms (under development)
+- Cloud Services: Leveraged for scalability and reliability
+
+
+## Contributors
+- [Puru Soni](https://www.linkedin.com/in/purusoni/)
+- [Naveen]()
+- [John]()
+- [Dylan]()
+- [Eddie]()
+
+## Acknowledgments
+We would like to express our gratitude to the open-source community and all contributors who have helped make Job Match a reality.
+
+<br>
+<br>
+
+***Job Match - Swipe right to your dream job!*** 💼🚀
+
+
+
+
