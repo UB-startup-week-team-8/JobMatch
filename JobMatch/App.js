@@ -8,6 +8,7 @@ import DMComponent from './DMs';
 import { Ionicons } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import Profile from './Profile'
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +29,11 @@ function MatchesScreen() {
 }
 
 function ProfileScreen() {
-  return <Text></Text>;
+  return (
+    <View>
+      <Profile/>
+    </View>
+  );
 }
 
 export default function App() {
