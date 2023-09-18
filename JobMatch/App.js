@@ -25,7 +25,11 @@ function MatchesScreen() {
 }
 
 function ProfileScreen() {
-  return <Text></Text>;
+  return (
+    <View>
+      <Profile/>
+    </View>
+  );
 }
 
 export default function App() {
