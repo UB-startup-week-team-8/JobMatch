@@ -4,7 +4,7 @@
 
 ## Demo 📹
 
-<img src="./demo.gif" height=500 alt="JobMatch Demo Video">
+<img src="./demo.gif" alt="JobMatch Demo Video">
 
 ## Finding Inspiration 🌟
 
