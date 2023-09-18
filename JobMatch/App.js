@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
+import Profile from './Profile';
 import SwiperComponent from './Swiper';
 import DMComponent from './DMs';
 
@@ -36,17 +37,17 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-         <Tab.Screen name="Swipe" component={SwipeScreen} options={{
+         <Tab.Screen name="JobMatch | Swipe" component={SwipeScreen} options={{
              tabBarIcon: () => (
               <Text style={{fontSize: 25}}>🔥</Text>
              ),
            }}/>
-         <Tab.Screen name="Matches" component={MatchesScreen} options={{
+         <Tab.Screen name="JobMatch | Matches" component={MatchesScreen} options={{
              tabBarIcon: () => (
                 <Text style={{fontSize: 25}}>💬</Text>
              ),
            }}/>
-         <Tab.Screen name="Profile" component={ProfileScreen} options={{
+         <Tab.Screen name="JobMatch | Profile" component={ProfileScreen} options={{
              tabBarIcon: () => (
                 <Text style={{fontSize: 25}}>👤</Text>
              ),

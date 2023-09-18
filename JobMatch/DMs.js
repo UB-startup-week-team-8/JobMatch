@@ -27,7 +27,7 @@ const DMListScreen = () => {
   const renderItem = ({ item }) => (
     <View style={{padding: 20, marginTop: 0}}>
     <TouchableOpacity onPressIn={() => {opacity: 0.1}} onPressOut={() => {opacity: 1}}>
-      <Text style={{fontSize: 20}}><Text style={{fontSize: 40}}>🔥</Text>{item.name}</Text>
+      <Text style={{fontSize: 20}}><Text style={{fontSize: 40}}></Text>{item.name}</Text>
       <Text style={{marginLeft: 0, marginTop: 10, color: 808080}}>Hello, we saw your application and we...</Text>
     </TouchableOpacity>  
     </View>
