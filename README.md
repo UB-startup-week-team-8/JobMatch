@@ -12,7 +12,7 @@ Our journey with Job Match started with a shared frustration – the tedious and
 
 ## A Real App, a Bright Future 📱
 
-While our app is live, we're excited about the potential it holds. Currently, Job Match offers a user-friendly interface that allows job seekers to seamlessly browse job listings, chat with employers, and apply with ease. However, the AI algorithm, which will take our platform to the next level, is still in development.
+While our app is not published yet, we're excited about the potential it holds. Currently, Job Match offers a user-friendly interface that allows job seekers to seamlessly browse job listings, chat with employers, and apply with ease. However, the AI algorithm, which will take our platform to the next level, is still in development.
 
 ## The Tech Behind Job Match 💻
 
