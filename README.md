@@ -1,7 +1,5 @@
 # JobMatch - Swipe right to your dream job! 💼🚀
 
-***Hackathon Project***
-
 ## Demo 📹
 
 <img src="./demo.gif" alt="JobMatch Demo Video" width=300>
